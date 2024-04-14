@@ -1,0 +1,13 @@
+ /* Estilos de hover para las cajas */
+ .box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar transición para la sombra */
+    position: relative; /* Añadir posición relativa */
+    z-index: 1; /* Para asegurar que esté encima de las otras cajas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra suave */
+  }
+
+  .box:hover {
+    transform: scale(1.05) translateY(-5px); /* Aumenta el tamaño y desplaza hacia arriba */
+    z-index: 2; /* Asegura que la caja ampliada esté sobre las demás */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+  }
